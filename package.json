@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "parcel": "^2.7.0"
+  },
+  "name": "golden-store-project",
+  "version": "1.0.0",
+  "default": "index.html",
+  "devDependencies": {},
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://outofs@github.com/outofs/golden-store-project.git"
+  },
+  "author": "Olexandr Hirych",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/outofs/golden-store-project/issues"
+  },
+  "homepage": "https://github.com/outofs/golden-store-project#readme",
+  "description": ""
+}
