@@ -11,9 +11,12 @@
 
     <!-- =======================================FONTS======================================= -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- =========================== SWIPER CSS =========================== -->
+    <link rel="stylesheet" href="./src/swiper-bundle.min.css" />
 
     <!-- =========================== UNICONS =========================== -->
     <link
@@ -30,12 +33,18 @@
     <!-- =======================================JS======================================= -->
     <script defer src="./src/js/script.js"></script>
 
+    <!-- =========================== SWIPER JS =========================== -->
+    <script src="./src/swiper-bundle.min.js"></script>
+
     <title>Golden Store</title>
   </head>
   <body>
     <!-- =======================================HEADER======================================= -->
+
+    <div class="bg-header"></div>
     <header class="header" id="header">
       <!-- Nav -->
+
       <nav class="nav container">
         <div class="nav__logo">
           <a href="index.html"
@@ -48,7 +57,7 @@
               <a href="index.html">Home</a>
             </li>
             <li class="nav__item">
-              <a href="">Products</a>
+              <a href="#Featured-Products">Products</a>
             </li>
             <li class="nav__item">
               <a href="">About</a>
@@ -69,7 +78,7 @@
 
           <div class="cart-content">
             <!-- Content -->
-            <div class="cart-box">
+            <!-- <div class="cart-box">
               <img src="./src/img/product-2.png" alt="" class="cart-img" />
               <div class="detail-box">
                 <div class="cart-product-title">
@@ -77,11 +86,11 @@
                 </div>
                 <div class="cart-price">$110.05</div>
                 <input type="number" value="1" class="cart-quantity" />
-              </div>
+              </div> -->
 
-              <!-- Remove Cart -->
-              <i class="uil uil-trash cart-remove"></i>
-            </div>
+            <!-- Remove Cart -->
+            <!-- <i class="uil uil-trash cart-remove"></i>
+            </div> -->
           </div>
           <!-- Total -->
           <div class="total">
@@ -96,32 +105,34 @@
         <i class="uil uil-bars menu-icon"></i>
       </nav>
 
-      <div class="row">
-        <div class="col-2">
+      <div class="header-container container">
+        <div class="header-content">
           <h1>Time is Gold</h1>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni sunt
-            placeat quaerat? Nihil facere rem voluptatibus adipisci in ipsa?
-            Obcaecati cum, tenetur iure optio dolor alias consequatur tempore
-            sit rerum?
-          </p>
-          <a href="" class="btn">Explore Now &#10132;</a>
-        </div>
-        <div class="col-2">
-          <img src="./src/img/img1.png" alt="" />
+          <div class="btn-place">
+            <a href="#Featured-Products" class="btn btn-explore"
+              >Explore Now &#8595;</a
+            >
+          </div>
         </div>
       </div>
     </header>
 
     <!-- ========================================FEATURED PRODUCTS======================================== -->
+    <div id="Featured-Products"></div>
     <section class="shop container">
       <h2 class="section-title">Featured Products</h2>
       <div class="shop-content">
         <!-- Products content -->
 
         <div class="product-box">
-          <img class="product-img" src="./src/img/product-1.png" alt="" />
-          <h4 class="product-title">Golden Ring with Small Briliant</h4>
+          <img
+            class="product-img"
+            src="https://www.zales.com/productimages/processed/V-20193441_0_260.jpg"
+            alt=""
+          />
+          <h4 class="product-title">
+            1/10 CT. T.W. Diamond Twist Vintage-Style Band in 10K Gold
+          </h4>
           <div class="product-rating">
             <i class="uil uil-star"></i>
             <i class="uil uil-star"></i>
@@ -129,15 +140,21 @@
             <i class="uil uil-star"></i>
             <i class="uil uil-star"></i>
           </div>
-          <span class="product-price">$100.00</span>
+          <span class="product-price">$330.00</span>
           <i class="uil uil-shopping-bag add-cart"></i>
         </div>
 
         <!-- Products content -->
 
         <div class="product-box">
-          <img class="product-img" src="./src/img/product-2.png" alt="" />
-          <h4 class="product-title">Golden Ring with Small Briliant</h4>
+          <img
+            class="product-img"
+            src="https://www.zales.com/productimages/processed/V-20369599_0_260.jpg?pristine=true"
+            alt=""
+          />
+          <h4 class="product-title">
+            1/6 CT. T.W. Diamond Elongated Infinity Drop Earrings in 10K Gold
+          </h4>
           <div class="product-rating">
             <i class="uil uil-star"></i>
             <i class="uil uil-star"></i>
@@ -145,15 +162,22 @@
             <i class="uil uil-star"></i>
             <i class="uil uil-star"></i>
           </div>
-          <span class="product-price">$110.00</span>
+          <span class="product-price">$669.00</span>
           <i class="uil uil-shopping-bag add-cart"></i>
         </div>
 
         <!-- Products content -->
 
         <div class="product-box">
-          <img class="product-img" src="./src/img/product-3.png" alt="" />
-          <h4 class="product-title">Golden Ring with Small Briliant</h4>
+          <img
+            class="product-img"
+            src="https://www.zales.com/productimages/processed/V-20373278_0_260.jpg?pristine=true"
+            alt=""
+          />
+          <h4 class="product-title">
+            Men's 1/2 CT. T.W. Diamond Circle Frame Lion Head Domed Ring in 10K
+            Gold and Black Rhodium
+          </h4>
           <div class="product-rating">
             <i class="uil uil-star"></i>
             <i class="uil uil-star"></i>
@@ -161,15 +185,22 @@
             <i class="uil uil-star"></i>
             <i class="uil uil-star"></i>
           </div>
-          <span class="product-price">$90.00</span>
+          <span class="product-price">$1079.00</span>
           <i class="uil uil-shopping-bag add-cart"></i>
         </div>
 
         <!-- Products content -->
 
         <div class="product-box">
-          <img class="product-img" src="./src/img/product-4.png" alt="" />
-          <h4 class="product-title">Golden Ring with Small Briliant</h4>
+          <img
+            class="product-img"
+            src="https://www.zales.com/productimages/processed/V-20365663_0_260.jpg?pristine=true"
+            alt=""
+          />
+          <h4 class="product-title">
+            Ladies' Movado Bold® Evolution Gold-Tone IP Chronograph Watch with
+            Mother-of-Pearl Dial (Model: 3600788)
+          </h4>
           <div class="product-rating">
             <i class="uil uil-star"></i>
             <i class="uil uil-star"></i>
@@ -177,12 +208,489 @@
             <i class="uil uil-star"></i>
             <i class="uil uil-star"></i>
           </div>
-          <span class="product-price">$100.00</span>
+          <span class="product-price">$895.00</span>
           <i class="uil uil-shopping-bag add-cart"></i>
         </div>
       </div>
     </section>
+    <hr />
 
+    <!-- ========================================Latest PRODUCTS======================================== -->
+    <div id="latest-Products"></div>
+    <section class="shop container">
+      <h2 class="section-title">Latest Products</h2>
+      <div class="shop-content">
+        <!-- Products content -->
+
+        <div class="product-box">
+          <img
+            class="product-img"
+            src="https://www.zales.com/productimages/processed/V-20193441_0_260.jpg"
+            alt=""
+          />
+          <h4 class="product-title">
+            1/10 CT. T.W. Diamond Twist Vintage-Style Band in 10K Gold
+          </h4>
+          <div class="product-rating">
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+          </div>
+          <span class="product-price">$330.00</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+
+        <!-- Products content -->
+
+        <div class="product-box">
+          <img
+            class="product-img"
+            src="https://www.zales.com/productimages/processed/V-20375355_0_260.jpg?pristine=true"
+            alt=""
+          />
+          <h4 class="product-title">
+            Men's 1 CT. T.W. Baguette and Round Diamond Curb Chain Link Ring in
+            10K Gold
+          </h4>
+          <div class="product-rating">
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+          </div>
+          <span class="product-price">$1990.00</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+
+        <!-- Products content -->
+
+        <div class="product-box">
+          <img
+            class="product-img"
+            src="https://www.zales.com/productimages/processed/V-20413030_0_260.jpg?pristine=true"
+            alt=""
+          />
+          <h4 class="product-title">
+            1/2 CT. T.W. Diamond Multi-Row Zig-Zag Ring in 10K Gold
+          </h4>
+          <div class="product-rating">
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+          </div>
+          <span class="product-price">$1390.00</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+
+        <!-- Products content -->
+
+        <div class="product-box">
+          <img
+            class="product-img"
+            src="https://www.zales.com/productimages/processed/V-20413028_0_260.jpg?pristine=true"
+            alt=""
+          />
+          <h4 class="product-title">
+            1/3 CT. T.W. Composite Cushion Diamond Necklace in 10K Gold
+          </h4>
+          <div class="product-rating">
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+          </div>
+          <span class="product-price">$869.00</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+
+        <!-- Products content -->
+
+        <div class="product-box">
+          <img
+            class="product-img"
+            src="https://www.zales.com/productimages/processed/V-20419746_0_260.jpg?pristine=true"
+            alt=""
+          />
+          <h4 class="product-title">
+            1/4 CT. T.W. Pear-Shaped Multi-Diamond Stud Earrings in 10K Gold
+          </h4>
+          <div class="product-rating">
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+          </div>
+          <span class="product-price">$669.00</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+
+        <!-- Products content -->
+
+        <div class="product-box">
+          <img
+            class="product-img"
+            src="https://www.zales.com/productimages/processed/V-20369599_0_260.jpg?pristine=true"
+            alt=""
+          />
+          <h4 class="product-title">
+            1/6 CT. T.W. Diamond Elongated Infinity Drop Earrings in 10K Gold
+          </h4>
+          <div class="product-rating">
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+          </div>
+          <span class="product-price">$669.00</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+
+        <!-- Products content -->
+
+        <div class="product-box">
+          <img
+            class="product-img"
+            src="https://www.zales.com/productimages/processed/V-20362199_0_260.jpg?pristine=true"
+            alt=""
+          />
+          <h4 class="product-title">
+            1/2 CT. T.W. Diamond Seven Stone Anniversary Band in 14K Gold
+          </h4>
+          <div class="product-rating">
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+          </div>
+          <span class="product-price">$874.00</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+
+        <!-- Products content -->
+
+        <div class="product-box">
+          <img
+            class="product-img"
+            src="https://www.zales.com/productimages/processed/V-20478819_0_260.jpg?pristine=true"
+            alt=""
+          />
+          <h4 class="product-title">
+            2 CT. T.W. Diamond Tennis Bracelet in 10K Gold
+          </h4>
+          <div class="product-rating">
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+          </div>
+          <span class="product-price">$4669.00</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+
+        <!-- Products content -->
+
+        <div class="product-box">
+          <img
+            class="product-img"
+            src="https://www.zales.com/productimages/processed/V-20173750_0_260.jpg"
+            alt=""
+          />
+          <h4 class="product-title">
+            Ladies' Bulova Modern Diamond Accent Gold-Tone Watch with
+            Rectangular Black Dial (Model: 97P135)
+          </h4>
+          <div class="product-rating">
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+          </div>
+          <span class="product-price">$395.00</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+
+        <!-- Products content -->
+
+        <div class="product-box">
+          <img
+            class="product-img"
+            src="https://www.zales.com/productimages/processed/V-20365504_0_260.jpg?pristine=true"
+            alt=""
+          />
+          <h4 class="product-title">
+            Ladies' Movado Sapphire™ Diamond Accent Gold-Tone PVD Watch with
+            Gold-Tone Dial (Model: 0607550)
+          </h4>
+          <div class="product-rating">
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+          </div>
+          <span class="product-price">$1995.00</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+
+        <!-- Products content -->
+
+        <div class="product-box">
+          <img
+            class="product-img"
+            src="https://www.zales.com/productimages/processed/V-20365663_0_260.jpg?pristine=true"
+            alt=""
+          />
+          <h4 class="product-title">
+            Ladies' Movado Bold® Evolution Gold-Tone IP Chronograph Watch with
+            Mother-of-Pearl Dial (Model: 3600788)
+          </h4>
+          <div class="product-rating">
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+          </div>
+          <span class="product-price">$895.00</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+
+        <!-- Products content -->
+
+        <div class="product-box">
+          <img
+            class="product-img"
+            src="https://www.zales.com/productimages/processed/V-20365354_0_260.jpg?pristine=true"
+            alt=""
+          />
+          <h4 class="product-title">
+            4.0mm White Lab-Created Sapphire Tennis Bracelet in Sterling Silver
+            with Yellow Rhodium - 7.25"
+          </h4>
+          <div class="product-rating">
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+          </div>
+          <span class="product-price">$139.00</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+
+        <!-- Products content -->
+
+        <div class="product-box">
+          <img
+            class="product-img"
+            src="https://www.zales.com/productimages/processed/V-19970398_0_260.jpg?pristine=true"
+            alt=""
+          />
+          <h4 class="product-title">
+            Cubic Zirconia Infinity Hoop Earrings in 10K Gold
+          </h4>
+          <div class="product-rating">
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+          </div>
+          <span class="product-price">$105.00</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+
+        <!-- Products content -->
+
+        <div class="product-box">
+          <img
+            class="product-img"
+            src="https://www.zales.com/productimages/processed/V-20339007_0_260.jpg?pristine=true"
+            alt=""
+          />
+          <h4 class="product-title">
+            Made in Italy 020 Gauge Sparkle Chain Anklet in 10K Solid Gold - 10"
+          </h4>
+          <div class="product-rating">
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+          </div>
+          <span class="product-price">$34.00</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+
+        <!-- Products content -->
+
+        <div class="product-box">
+          <img
+            class="product-img"
+            src="https://www.zales.com/productimages/processed/V-20373278_0_260.jpg?pristine=true"
+            alt=""
+          />
+          <h4 class="product-title">
+            Men's 1/2 CT. T.W. Diamond Circle Frame Lion Head Domed Ring in 10K
+            Gold and Black Rhodium
+          </h4>
+          <div class="product-rating">
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+          </div>
+          <span class="product-price">$1079.00</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+
+        <!-- Products content -->
+
+        <div class="product-box">
+          <img
+            class="product-img"
+            src="https://www.zales.com/productimages/processed/V-20342060_0_260.jpg?pristine=true"
+            alt=""
+          />
+          <h4 class="product-title">
+            Made in Italy 6.0mm Diamond-Cut Hollow Double Curb Chain Bracelet in
+            14K Two-Tone Gold - 7.5"
+          </h4>
+          <div class="product-rating">
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+          </div>
+          <span class="product-price">$1199.00</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <!-- ========================================Premium Access======================================== -->
+    <div id="Premium-Access"></div>
+    <section class="shop container">
+      <h2 class="section-title">Premium Access</h2>
+      <div class="shop-content premium-content swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Products content -->
+
+          <div class="product-box premium-box swiper-slide">
+            <img
+              class="product-img"
+              src="https://www.zales.com/productimages/processed/V-17121914_0_260.jpg?pristine=true"
+              alt=""
+            />
+            <h4 class="product-title">
+              3 CT. Certified Diamond Solitaire Engagement Ring in 14K Gold
+              (I/I2)
+            </h4>
+            <div class="product-rating">
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+            </div>
+            <span class="product-price">$19999.99</span>
+            <div class="btn add-cart">I want it!</div>
+          </div>
+
+          <!-- Products content -->
+
+          <div class="product-box premium-box swiper-slide">
+            <img
+              class="product-img"
+              src="https://www.zales.com/productimages/processed/V-19611961_0_260.jpg?pristine=true"
+              alt=""
+            />
+            <h4 class="product-title">
+              1/6 CT. T.W. Diamond Elongated Infinity Drop Earrings in 10K Gold
+            </h4>
+            <div class="product-rating">
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+            </div>
+            <span class="product-price">$8749.99</span>
+            <div class="btn add-cart">I want it!</div>
+          </div>
+
+          <!-- Products content -->
+
+          <div class="product-box premium-box swiper-slide">
+            <img
+              class="product-img"
+              src="https://www.zales.com/productimages/processed/V-20466822_0_260.jpg?pristine=true"
+              alt=""
+            />
+            <h4 class="product-title">
+              Previously Owned - Ladies' Rolex Datejust 26 1 CT. T.W. Diamond
+              18K Gold Automatic Watch with Black Dial (Model: 69178)
+            </h4>
+            <div class="product-rating">
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+            </div>
+            <span class="product-price">$20442.50</span>
+            <div class="btn add-cart">I want it!</div>
+          </div>
+
+          <!-- Products content -->
+
+          <div class="product-box premium-box swiper-slide">
+            <img
+              class="product-img"
+              src="https://www.zales.com/productimages/processed/V-19377217_0_260.jpg"
+              alt=""
+            />
+            <h4 class="product-title">
+              Oval Blue Sapphire and 5/8 CT. T.W. Diamond Frame Engagement Ring
+              in 14K Gold
+            </h4>
+            <div class="product-rating">
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+              <i class="uil uil-star"></i>
+            </div>
+            <span class="product-price">$15579.00</span>
+            <div class="btn add-cart">I want it!</div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-btns">
+        <div class="swiper-btn swiper-btn-prev">
+          <i class="uil uil-angle-left swiper-portfolio-icon"></i>
+        </div>
+        <div class="swiper-btn swiper-btn-next">
+          <i class="uil uil-angle-right swiper-portfolio-icon"></i>
+        </div>
+      </div>
+    </section>
+
+    <hr />
     <!-- ========================================TESTIMONIAL======================================== -->
     <section class="testimonial">
       <div class="small-container">

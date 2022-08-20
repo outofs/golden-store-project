@@ -106,20 +106,18 @@ const addCart = function () {
 
 const addCartFunction = function (event) {
   const shopProduct = event.target.parentElement;
-  const title = shopProduct.querySelector(".product-title").textContent;
+  const title = shopProduct.querySelector(".product-title").innerText;
   const price = shopProduct.querySelector(".product-price").textContent;
   const img = shopProduct.querySelector(".product-img").src;
 
   const cartTitles = [];
   document
     .querySelectorAll(".cart-product-title")
-    .forEach((title) => cartTitles.push(title.textContent));
-  console.log(cartTitles);
+    .forEach((title) => cartTitles.push(title.innerText));
 
-  if (cartTitles.includes(title)) {
-    alert("Alert");
+  if (cartTitles.includes(title.toUpperCase())) {
+    alert("You have already add this item to Cart");
   } else {
-    console.log(title);
     renderProductInCart(title, price, img);
     updateTotal();
   }
@@ -181,3 +179,23 @@ if (document.readyState == "loading") {
 } else {
   ready();
 }
+
+///////////////////////Smooth Scrolling///////////////////////
+document.querySelector(".btn-explore").addEventListener("cklick", function () {
+  document
+    .querySelector("#Featured-Products")
+    .scrollIntoView({ behavior: "smooth" });
+});
+
+let swiperPremium = new Swiper(".premium-content", {
+  cssMode: true,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-btn-next",
+    prevEl: ".swiper-btn-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
