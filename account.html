@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="./src/img/icon.png" />
 
     <!-- =======================================CSS======================================= -->
     <link rel="stylesheet" href="./src/style/style.css" />
 
     <!-- =======================================FONTS======================================= -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -28,7 +29,7 @@
     />
 
     <!-- =======================================JS======================================= -->
-    <script defer src="./src/js/script.js"></script>
+    <script defer src="./src/js/account-script.js"></script>
 
     <title>All Products - Golden Store</title>
   </head>
@@ -43,62 +44,57 @@
             <a href="index.html">Home</a>
           </li>
           <li class="nav__item">
-            <a href="">Products</a>
+            <a href="./index.html">Products</a>
           </li>
           <li class="nav__item">
-            <a href="">About</a>
+            <a href="./index.html">Testimonials</a>
           </li>
           <li class="nav__item">
-            <a href="">Contact</a>
+            <a href="./index.html">Brands</a>
           </li>
           <li class="nav__item">
             <a href="account.html">Account</a>
           </li>
         </ul>
       </div>
-      <i class="uil uil-shopping-bag cart"></i>
       <i class="uil uil-bars menu-icon"></i>
     </nav>
 
     <!-- ========================================ACCOUNT PAGE======================================== -->
     <div class="account-page">
       <div class="container">
-        <div class="row">
-          <div class="col-2">
+        <!-- <div class="col-2">
             <img src="./src/img/img1.png" alt="" width="100%" />
-          </div>
-          <div class="col-2">
-            <div class="form-container">
-              <div class="form-btn">
-                <span class="loginBtn">Login</span>
-                <span class="registerBtn">Register</span>
-                <hr class="indicator" />
-              </div>
-
-              <form action="" class="login-form">
-                <input type="text" placeholder="Username" />
-                <input type="password" placeholder="Password" />
-                <button type="submit" class="btn">Login</button>
-                <a href="">Forgot password</a>
-              </form>
-
-              <form action="" class="register-form">
-                <input type="text" placeholder="Username" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <button type="submit" class="btn">Register</button>
-              </form>
+          </div> -->
+        <div class="col-2">
+          <div class="form-container">
+            <div class="form-btn">
+              <span class="loginBtn">Login</span>
+              <span class="registerBtn">Register</span>
+              <hr class="indicator" />
             </div>
+
+            <form action="" class="login-form">
+              <input type="text" placeholder="Username" />
+              <input type="password" placeholder="Password" />
+              <button type="submit" class="btn">Login</button>
+              <a href="">Forgot password</a>
+            </form>
+
+            <form action="" class="register-form">
+              <input type="text" placeholder="Username" />
+              <input type="email" placeholder="Email" />
+              <input type="password" placeholder="Password" />
+              <button type="submit" class="btn">Register</button>
+            </form>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- ========================================FOOTER======================================== -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="footer-col-1">
+      <!-- ========================================FOOTER======================================== -->
+      <footer>
+        <div class="fotter-content">
+          <div class="footer-col">
             <h3>Download Our App</h3>
             <p>Download App for Android and iOS</p>
             <div class="app-logo">
@@ -106,16 +102,8 @@
               <img src="./src/img/app-image-1.png" alt="" />
             </div>
           </div>
-          <div class="footer-col-2">
-            <img src="./src/img/TestLogo.png" alt="" />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consectetur veniam corporis rem nisi repellat nobis consequatur
-              nostrum optio necessitatibus quisquam mollitia, assumenda quidem
-              eligendi, impedit in iste maiores saepe asperiores.
-            </p>
-          </div>
-          <div class="footer-col-3">
+
+          <div class="footer-col">
             <h3>Useful Links</h3>
             <ul>
               <li>Coupons</li>
@@ -124,7 +112,8 @@
               <li>Join Affiliate</li>
             </ul>
           </div>
-          <div class="footer-col-4">
+
+          <div class="footer-col">
             <h3>Folow us</h3>
             <ul>
               <li>Facebook</li>
@@ -136,7 +125,7 @@
         </div>
         <hr />
         <p class="copyright">Copyright 2022</p>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
