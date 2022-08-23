@@ -91,7 +91,7 @@ header {
   margin-right: 20px;
 }
 .nav__item a {
-  color: rgb(126, 126, 126);
+  color: rgb(158, 158, 158);
   transition: 0.5s;
 }
 
@@ -174,12 +174,21 @@ header {
   transition: 0.5s;
   font-size: 1rem;
   font-weight: 600;
+  font-family: inherit;
+  line-height: 2rem;
+}
+
+.btn:focus {
+  background: var(--golden-color-light);
+  transform: translateY(5px);
+  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {
   background: var(--golden-color-light);
   transform: translateY(5px);
   cursor: pointer;
+  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* ========================================FEATURED PRODUCTS======================================== */
@@ -697,10 +706,10 @@ form input {
 }
 
 form .btn {
-  width: 100%;
+  display: block;
   border: none;
   cursor: pointer;
-  margin: 10px 0;
+  margin: 10px auto;
 }
 
 form.btn:focus {
