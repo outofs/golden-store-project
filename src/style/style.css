@@ -562,10 +562,11 @@ h4 {
 .brands-content {
   display: grid;
   /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-  grid-template-columns: repeat(auto-fill, 320px);
+  grid-template-columns: repeat(auto-fill, 270px);
   column-gap: 5%;
   justify-content: center;
   justify-items: center;
+  padding: 0 20px;
 }
 
 .brand {
@@ -577,7 +578,7 @@ h4 {
 }
 
 .brand-img {
-  width: 300px;
+  width: 250px;
   height: auto;
 }
 
@@ -766,7 +767,7 @@ form a {
 
   .nav__item {
     display: block;
-    margin-right: 50px;
+    margin-right: 10px;
     margin-top: 10px;
   }
 
@@ -779,7 +780,7 @@ form a {
   }
 
   .shop-content {
-    grid-template-columns: repeat(auto-fill, 230px);
+    grid-template-columns: repeat(auto-fill, 270px);
   }
 
   .premium-box .product-img {
@@ -792,11 +793,12 @@ form a {
   }
 
   .brands-content {
-    grid-template-columns: repeat(auto-fill, 250px);
+    grid-template-columns: repeat(auto-fill, 130px);
+    padding: 0px;
   }
 
   .brand-img {
-    width: 240px;
+    width: 120px;
     height: auto;
   }
 }
@@ -815,7 +817,7 @@ form a {
   }
 
   .shop-content {
-    grid-template-columns: repeat(auto-fill, 130px);
+    grid-template-columns: repeat(auto-fill, 250px);
   }
 
   h4 {
@@ -831,11 +833,11 @@ form a {
   }
 
   .brands-content {
-    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-columns: repeat(auto-fill, 100px);
   }
 
   .brand-img {
-    width: 190px;
+    width: 90px;
     height: auto;
   }
 }
@@ -851,11 +853,6 @@ form a {
   .brands {
     margin-top: 60px;
     margin-bottom: 30px;
-  }
-
-  .brand-img {
-    width: 150px;
-    height: auto;
   }
 
   .cart-container {
